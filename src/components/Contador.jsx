@@ -1,8 +1,8 @@
-const { Component } = require("react")
+import { Component } from "react";
 
 class Contador extends Component{
     state = {
-        numero: 0
+        numero: this.props.startIn
     };
 
     render() {
