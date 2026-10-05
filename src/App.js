@@ -16,11 +16,12 @@ function App() {
           <DibujosComplejosArray/>
           <DibujosComplejosRender/>
           <Polideportivo/>
-          <Comics  />
+          <NumeroPadre cantidadDeNumerosIniciales={3}/>
         </>
       }
 
-        <NumeroPadre cantidadDeNumerosIniciales={3}/>
+      <Comics  />
+
     </>
   );
 }

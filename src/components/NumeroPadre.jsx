@@ -18,13 +18,13 @@ class NumeroPadre extends Component{
             let num = parseInt(Math.random() * 120) + 1;
             this.state.numList.push(<NumeroHijo key={num} numero={num} sumarNumeros={this.sumarNumeros} />);
         }
-        this.setState({numList: this.state.numList});
+        this.setState({numList: [...this.state.numList]});
     }
 
     generarNuevoNumero = () => {
         let num = parseInt(Math.random() * 120) + 1;
         this.state.numList.push(<NumeroHijo key={num} numero={num} sumarNumeros={this.sumarNumeros} />);
-        this.setState({numList: this.state.numList});
+        this.setState({numList: [...this.state.numList]});
     }
 
     render() {
